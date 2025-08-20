@@ -25,10 +25,10 @@
                         <Text text="Phone"/>
                     </Column>
                     <Column>
-                        <Text text="Email"/>
+                        <Text text="Email "/>
                     </Column>
                     <Column>
-                        <Text text="Experience (Years)"/>
+                        <Text text="Experience(Years)"/>
                     </Column>
                 </columns>
                 <items>
