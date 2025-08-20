@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="doctorapplication.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="Doctors">
+        <content>
+            <Table id="doctorTable" inset="false" items="{/Doctors}">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Doctors List" level="H2"/>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <Text text="First Name"/>
+                    </Column>
+                    <Column>
+                        <Text text="Last Name"/>
+                    </Column>
+                    <Column>
+                        <Text text="Specialization"/>
+                    </Column>
+                    <Column>
+                        <Text text="Phone"/>
+                    </Column>
+                    <Column>
+                        <Text text="Email"/>
+                    </Column>
+                    <Column>
+                        <Text text="Experience (Years)"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{firstName}"/>
+                            <Text text="{lastName}"/>
+                            <Text text="{specialization}"/>
+                            <Text text="{phone}"/>
+                            <Text text="{email}"/>
+                            <Text text="{yearsOfExperience}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

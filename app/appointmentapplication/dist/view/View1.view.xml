@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="appointmentapplication.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="page" title="Appointments Data">
+        <content>
+            <Table id="appointmentsTable" items="{appointments>/appointments}">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Appointments List" level="H2" />
+                    </Toolbar>
+                </headerToolbar>
+
+                <columns>
+                    <Column><Text text="ID" /></Column>
+                    <Column><Text text="Patient Name" /></Column>
+                    <Column><Text text="Doctor Name" /></Column>
+                    <Column><Text text="Date" /></Column>
+                    <Column><Text text="Status" /></Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{appointments>ID}" />
+                            <Text text="{appointments>patient/name}" />
+                            <Text text="{appointments>doctor/name}" />
+                            <Text text="{appointments>appointmentDate}" />
+                            <Text text="{appointments>status}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

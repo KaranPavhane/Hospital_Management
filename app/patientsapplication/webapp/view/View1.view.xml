@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="patientsapplication.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="Patients List">
+        <content>
+            <Table id="patientsTable" inset="false" items="{Patients}">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Patients" level="H2"/>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column><Text text="First Name"/></Column>
+                    <Column><Text text="Last Name"/></Column>
+                    <Column><Text text="DOB"/></Column>
+                    <Column><Text text="Gender"/></Column>
+                    <Column><Text text="Phone"/></Column>
+                    <Column><Text text="Email"/></Column>
+                    <Column><Text text="Address"/></Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{firstName}"/>
+                            <Text text="{lastName}"/>
+                            <Text text="{dateOfBirth}"/>
+                            <Text text="{gender}"/>
+                            <Text text="{phone}"/>
+                            <Text text="{email}"/>
+                            <Text text="{address}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

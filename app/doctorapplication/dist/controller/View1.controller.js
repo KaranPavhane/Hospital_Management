@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel","sap/m/MessageToast"],function(o,e,t){"use strict";return o.extend("doctorapplication.controller.View1",{onInit:function(){var o=new e;this.getView().setModel(o);var a="/odata/v4/hospital/Doctors";$.ajax({url:a,method:"GET",success:function(e){if(e.value){o.setData({Doctors:e.value})}else{o.setData({Doctors:e})}},error:function(o){console.error(o);t.show("Failed to load doctors data")}})}})});
+//# sourceMappingURL=View1.controller.js.map

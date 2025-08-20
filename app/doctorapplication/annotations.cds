@@ -1,0 +1,1 @@
+using HospitalService as service from '../../srv/schema';
